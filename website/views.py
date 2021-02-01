@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.core.mail import send_mail
+from .models import Form
 
 def index(request):
 	return render(request, 'website/index.html')	
@@ -22,6 +23,8 @@ def test(request):
 			email, #from email
 			['madhavm2002@gmail.com'] #to email
 			)
+		form=Form(name = name, email = email, date = date, drop = drop, phone = phone, msg1= message1)
+		form.save()
 		return render(request, 'website/test.html', {'name':name})
 	else:
 		return render(request, 'website/index.html')
