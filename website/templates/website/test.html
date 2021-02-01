@@ -1,3 +1,18 @@
 {% extends 'website/base.html' %}
 {% load static %}
+{% block content%}
+{% if name %}
+    <center>
+        <h2>Thanks {{ name }}! </h2>
+            <p> We recieved your email and will respond shortly</p>
+    </center>
+         <br>
 
+{% else %}
+	<center>
+        <h2>APPOINTMENT WASNT FILLED! </h2>
+    </center>
+         <br> 
+
+{% endif %}
+{% endblock %}

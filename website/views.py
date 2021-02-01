@@ -2,6 +2,9 @@ from django.shortcuts import render
 from django.core.mail import send_mail
 
 def index(request):
+	return render(request, 'website/index.html')	
+
+def test(request):
 	if request.method == "POST":
 		name=request.POST['name']
 		email=request.POST['email']
@@ -19,16 +22,9 @@ def index(request):
 			email, #from email
 			['madhavm2002@gmail.com'] #to email
 			)
-
-
-
-		return render(request, 'website/index.html', {'name':name})
-
-	else:	
-		return render(request, 'website/index.html')	
-
-def test(request):
-	return render(request, 'website/test.html', {})
+		return render(request, 'website/test.html', {'name':name})
+	else:
+		return render(request, 'website/index.html')
 
 def newsD(request):
 	return render(request, 'website/newsD.html', {})
