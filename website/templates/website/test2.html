@@ -1,0 +1,451 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+     <title>Health - Medical Website Template</title>
+<!--
+
+Template 2098 Health
+
+http://www.tooplate.com/view/2098-health
+
+-->
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+     <meta name="description" content="">
+     <meta name="keywords" content="">
+     <meta name="author" content="Tooplate">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+     <link rel="stylesheet" href="{%  static 'css/bootstrap.min.css' %}">
+     <link rel="stylesheet" href="{%  static 'css/font-awesome.min.css' %}">
+     <link rel="stylesheet" href="{%  static 'css/animate.css' %}">
+     <link rel="stylesheet" href="{%  static 'css/owl.carousel.css' %}">
+     <link rel="stylesheet" href="{%  static 'css/owl.theme.default.min.css' %}">
+     <link rel="icon" type="jpg" href="{% static 'images/author-image.jpg' %}">
+     <!-- MAIN CSS -->
+     <link rel="stylesheet" href="{%  static 'css/tooplate-style.css' %}">
+
+</head>
+<body id="top" data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
+
+     <!-- PRE LOADER -->
+     <section class="preloader">
+          <div class="spinner">
+
+               <span class="spinner-rotate"></span>
+               
+          </div>
+     </section>
+
+
+     <!-- HEADER -->
+     <header>
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-4 col-sm-5">
+                         <p>Welcome to a Professional Health Care</p>
+                    </div>
+                         
+                    <div class="col-md-8 col-sm-7 text-align-right">
+                         <span class="phone-icon"><i class="fa fa-phone"></i> 010-060-0160</span>
+                         <span class="date-icon"><i class="fa fa-calendar-plus-o"></i> 6:00 AM - 10:00 PM (Mon-Fri)</span>
+                         <span class="email-icon"><i class="fa fa-envelope-o"></i> <a href="#">info@company.com</a></span>
+                    </div>
+
+               </div>
+          </div>
+     </header>
+
+
+     <!-- MENU -->
+     <section class="navbar navbar-default navbar-static-top" role="navigation">
+          <div class="container">
+
+               <div class="navbar-header">
+                    <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                         <span class="icon icon-bar"></span>
+                         <span class="icon icon-bar"></span>
+                         <span class="icon icon-bar"></span>
+                    </button>
+
+                    <!-- lOGO TEXT HERE -->
+                    <a href="/" class="navbar-brand"><i class="fa fa-h-square"></i>ealth Center</a>
+               </div>
+
+               <!-- MENU LINKS -->
+               <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                         <li><a href="#top" class="smoothScroll">Home</a></li>
+                         <li><a href="#about" class="smoothScroll">About Us</a></li>
+                         <li><a href="#team" class="smoothScroll">Doctors</a></li>
+                         <li><a href="#news" class="smoothScroll">News</a></li>
+                         <li><a href="#google-map" class="smoothScroll">Contact</a></li>
+                         <li class="appointment-btn"><a href="#appointment">Make an appointment</a></li>
+                         <li><a href="{% url 'login' %}" class="smoothScroll">Login</a></li>
+                    </ul>
+               </div>
+
+          </div>
+     </section>
+
+
+
+     <!-- HOME -->
+     <section id="home" class="slider" data-stellar-background-ratio="0.5">
+          <div class="container">
+               <div class="row">
+
+                         <div class="owl-carousel owl-theme">
+                              <div class="item item-first">
+                                   <div class="caption">
+                                        <div class="col-md-offset-1 col-md-10">
+                                             <h3>Let's make your life happier</h3>
+                                             <h1>Healthy Living</h1>
+                                             <a href="#team" class="section-btn btn btn-default smoothScroll">Meet Our Doctors</a>
+                                        </div>
+                                   </div>
+                              </div>
+
+                              <div class="item item-second">
+                                   <div class="caption">
+                                        <div class="col-md-offset-1 col-md-10">
+                                             <h3>this will talk about about us page</h3>
+                                             <h1>MADHAV TEST</h1>
+                                             <a href="#about" class="section-btn btn btn-default btn-gray smoothScroll">More About Us</a>
+                                        </div>
+                                   </div>
+                              </div>
+
+                              <div class="item item-third">
+                                   <div class="caption">
+                                        <div class="col-md-offset-1 col-md-10">
+                                             <h3>Pellentesque nec libero nisi</h3>
+                                             <h1>Your Health Benefits</h1>
+                                             <a href="#news" class="section-btn btn btn-default btn-blue smoothScroll">Read Stories</a>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+
+               </div>
+          </div>
+     </section>
+
+
+     <!-- ABOUT -->
+     <section id="about">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-6 col-sm-6">
+                         <div class="about-info">
+                              <h2 class="wow fadeInUp" data-wow-delay="0.6s">Welcome to Your <i class="fa fa-h-square"></i>ealth Center</h2>
+                              <div class="wow fadeInUp" data-wow-delay="0.8s">
+                                   <p>Aenean luctus lobortis tellus, vel ornare enim molestie condimentum. Curabitur lacinia nisi vitae velit volutpat venenatis.</p>
+                                   <p>Sed a dignissim lacus. Quisque fermentum est non orci commodo, a luctus urna mattis. Ut placerat, diam a tempus vehicula.</p>
+                              </div>
+                              <figure class="profile wow fadeInUp" data-wow-delay="1s">
+                                   <img src="{%  static 'images/IMG_9228.JPG'  %}" height=200 widht=174 class="img-responsive" alt="rt">
+                                   <figcaption>
+                                        <h3>Dr. Neil Jackson</h3>
+                                        <p>General Principal</p>
+                                   </figcaption>
+                              </figure>
+                         </div>
+                    </div>
+                    
+               </div>
+          </div>
+     </section>
+
+
+     <!-- TEAM -->
+     <section id="team" data-stellar-background-ratio="1">
+          <div class="container">
+               <div class="col-md-6 col-sm-6">
+                    <div class="about-info">
+                         <h2 class="wow fadeInUp" data-wow-delay="0.1s">Our Doctors</h2>
+                    </div>
+               </div>
+               <div class="clearfix"></div>
+               <div class="row">
+               {% for entry in doctor %}     
+                         <div class="col-md-4 col-sm-6">
+                              <div class="team-thumb wow fadeInUp" data-wow-delay="0.2s">
+                                   <img src=" {{ entry.dimage.url }} " class="img-responsive" alt="rt">
+                                        <div class="team-info">
+                                             <h3>{{ entry.dname }}</h3>
+                                             <p>{{ entry.ddept }}</p>
+                                             <div class="team-contact-info">
+                                                  <p><i class="fa fa-phone"></i> {{ entry.dphone }}</p>
+                                                  <p><i class="fa fa-envelope-o"></i> <a href="#">{{ entry.demail }}</a></p>
+                                             </div>
+                                             <ul class="social-icon">
+                                                  <li><a href="#" class="fa fa-linkedin-square"></a></li>
+                                                  <li><a href="#" class="fa fa-envelope-o"></a></li>
+                                             </ul>
+                                        </div>
+
+                              </div>
+                         </div>    
+               {% endfor %} 
+               </div>    
+          </div>
+     </section>          
+     <!-- NEWS -->
+     <section id="news" data-stellar-background-ratio="2.5">
+          <div class="container">
+               <div class="col-md-12 col-sm-12">
+                    <!-- SECTION TITLE -->
+                    <div class="section-title wow fadeInUp" data-wow-delay="0.1s">
+                         <h2>Latest News</h2>
+                    </div>
+               </div>
+               <div class="row">
+                    {% for entry in newss %}
+                    <div class="col-md-4 col-sm-6">
+                         <!-- NEWS THUMB -->
+                         <div class="news-thumb wow fadeInUp" data-wow-delay="0.4s">
+                              <a href="{% url 'newsD' entry.news_id %}">
+                                   <img src="{{ entry.aimg.url }}" class="img-responsive" alt="">
+                              </a>
+                              <div class="news-info">
+                                   <span>March 08, 2018</span>
+                                   <h3><a href="{% url 'newsD' entry.news_id %}">{{ entry.ntitle }}</a></h3>
+                                   <p>{{ entry.ndesc }}</p>
+                                   <div class="author">
+                                        <img src="{%  static 'images/author-image.jpg' %}" class="img-responsive" alt="">
+                                        <div class="author-info">
+                                             <h5>{{ entry.aname }}</h5>
+                                             <p>{{ entry.apos }}</p>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+                    {% endfor %}
+               </div>
+          </div>
+     </section>
+     
+     <section id="appointment" data-stellar-background-ratio="3">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-6 col-sm-6">
+                         <img src="{%  static 'images/appointment-image.jpg' %}" class="img-responsive" alt="">
+                    </div>
+
+                    <div class="col-md-6 col-sm-6">
+                         <!-- CONTACT FORM HERE -->
+                         <form id="appointment-form" role="form" method="post" action="{% url 'test' %}">
+                              {% csrf_token %}
+
+                              <!-- SECTION TITLE -->
+                              <div class="section-title wow fadeInUp" data-wow-delay="0.4s">
+                                   <h2>Make an appointment</h2>
+                              </div>
+
+                              <div class="wow fadeInUp" data-wow-delay="0.8s">
+                                   <div class="col-md-6 col-sm-6">
+                                        <label for="name">Name</label>
+                                        <input type="text" class="form-control" id="name" name="name" placeholder="Full Name">
+                                   </div>
+
+                                   <div class="col-md-6 col-sm-6">
+                                        <label for="email">Email</label>
+                                        <input type="email" class="form-control" id="email" name="email" placeholder="Your Email">
+                                   </div>
+
+                                   <div class="col-md-6 col-sm-6">
+                                        <label for="date">Select Date</label>
+                                        <input type="date" name="date" value="" class="form-control">
+                                   </div>
+
+                                   <div class="col-md-6 col-sm-6">
+                                        <label for="select">Select Department</label>
+                                        <select class="form-control" name="drop">
+                                        {% for entry in items %}
+                                             <option>{{ entry.category }}</option>
+                                        {% endfor %}
+                                        </select>
+                                   </div>
+
+                                   <div class="col-md-6 col-sm-6">
+                                        <label for="select">Select Time</label>
+                                        <select class="form-control" name="drop1">
+                                        {% for entry in times %}
+                                             <option>{{ entry.time }}</option>
+                                        {% endfor %}
+                                        </select>
+                                   </div>
+
+                                   <div class="col-md-12 col-sm-12">
+                                        <label for="telephone">Phone Number</label>
+                                        <input type="tel" class="form-control" id="phone" name="phone" placeholder="Phone">
+                                        <label for="Message">Additional Message</label>
+                                        <textarea class="form-control" rows="5" id="message" name="message" placeholder="Message"></textarea>
+                                        <button type="submit" class="form-control" id="cf-submit" name="submit">Submit Button</button>
+                                   </div>
+                              </div>
+                        </form>
+
+                    </div>
+
+               </div>
+          </div>
+     </section>
+     
+     <br>
+
+     <!-- GOOGLE MAP -->
+     <section id="google-map">
+     <!-- How to change your own map point
+            1. Go to Google Maps
+            2. Click on your location point
+            3. Click "Share" and choose "Embed map" tab
+            4. Copy only URL and paste it within the src="" field below
+	-->
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3647.3030413476204!2d100.5641230193719!3d13.757206847615207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf51ce6427b7918fc!2sG+Tower!5e0!3m2!1sen!2sth!4v1510722015945" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+     </section>   
+
+     <!-- FOOTER -->
+     <footer data-stellar-background-ratio="5">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-4 col-sm-4">
+                         <div class="footer-thumb"> 
+                              <h4 class="wow fadeInUp" data-wow-delay="0.4s">Contact Info</h4>
+                              <p>Fusce at libero iaculis, venenatis augue quis, pharetra lorem. Curabitur ut dolor eu elit consequat ultricies.</p>
+
+                              <div class="contact-info">
+                                   <p><i class="fa fa-phone"></i> 010-070-0170</p>
+                                   <p><i class="fa fa-envelope-o"></i> <a href="#">info@company.com</a></p>
+                              </div>
+                         </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-4"> 
+                         <div class="footer-thumb"> 
+                              <h4 class="wow fadeInUp" data-wow-delay="0.4s">Latest News</h4>
+                              <div class="latest-stories">
+                                   <div class="stories-image">
+                                        <a href="#"><img src="{%  static 'images/news-image.jpg' %}" class="img-responsive" alt=""></a>
+                                   </div>
+                                   <div class="stories-info">
+                                        <a href="#"><h5>Amazing Technology</h5></a>
+                                        <span>March 08, 2018</span>
+                                   </div>
+                              </div>
+
+                              <div class="latest-stories">
+                                   <div class="stories-image">
+                                        <a href="#"><img src="{%  static 'images/news-image.jpg' %}" class="img-responsive" alt=""></a>
+                                   </div>
+                                   <div class="stories-info">
+                                        <a href="#"><h5>New Healing Process</h5></a>
+                                        <span>February 20, 2018</span>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-4"> 
+                         <div class="footer-thumb">
+                              <div class="opening-hours">
+                                   <h4 class="wow fadeInUp" data-wow-delay="0.4s">Opening Hours</h4>
+                                   <p>Monday - Friday <span>06:00 AM - 10:00 PM</span></p>
+                                   <p>Saturday <span>09:00 AM - 08:00 PM</span></p>
+                                   <p>Sunday <span>Closed</span></p>
+                              </div> 
+
+                              <ul class="social-icon">
+                                   <li><a href="#" class="fa fa-facebook-square" attr="facebook icon"></a></li>
+                                   <li><a href="#" class="fa fa-twitter"></a></li>
+                                   <li><a href="#" class="fa fa-instagram"></a></li>
+                              </ul>
+                         </div>
+                    </div>
+
+                    <div class="col-md-12 col-sm-12 border-top">
+                         <div class="col-md-4 col-sm-6">
+                              <div class="copyright-text"> 
+                                   <p>Copyright &copy; 2018 Your Company 
+                                   
+                                   | Design: Tooplate</p>
+                              </div>
+                         </div>
+                         <div class="col-md-6 col-sm-6">
+                              <div class="footer-link"> 
+                                   <a href="#">Laboratory Tests</a>
+                                   <a href="#">Departments</a>
+                                   <a href="#">Insurance Policy</a>
+                                   <a href="#">Careers</a>
+                              </div>
+                         </div>
+                         <div class="col-md-2 col-sm-2 text-align-center">
+                              <div class="angle-up-btn"> 
+                                  <a href="#top" class="smoothScroll wow fadeInUp" data-wow-delay="1.2s"><i class="fa fa-angle-up"></i></a>
+                              </div>
+                         </div>   
+                    </div>
+                    
+               </div>
+          </div>
+     </footer>
+
+     <!-- SCRIPTS -->
+     <script src="{%  static 'js/jquery.js' %}"></script>
+     <script src="{%  static 'js/bootstrap.min.js' %}"></script>
+     <script src="{%  static 'js/jquery.sticky.js' %}"></script>
+     <script src="{%  static 'js/jquery.stellar.min.js' %}"></script>
+     <script src="{%  static 'js/wow.min.js' %}"></script>
+     <script src="{%  static 'js/smoothscroll.js' %}"></script>
+     <script src="{%  static 'js/owl.carousel.min.js' %}"></script>
+     <script src="{%  static 'js/custom.js' %}"></script>        
+
+<script>
+$("#appointment-form").ready(function () {
+    $("#appointment-form").on("click",'.slot_show', function() {
+        $status = $(this).attr('status')
+        $.ajax({
+            type: "POST",
+            // This is the dictionary you are SENDING to your Django code. 
+            // We are sending the 'action':add_car and the 'id: $car_id  
+            // which is a variable that contains what car the user selected
+            data: { action: "slot_show", id: $status },
+            success: function(data){
+                // This will execute when where Django code returns a dictionary 
+                // called 'data' back to us.
+                $("#car").html("<strong>"+data.car+"</strong>");                
+            }
+        });
+    });
+});
+
+#this is still testing
+<script type="text/javascript"> 
+$('.form-control').click(function(){ 
+var id; 
+id = $(this).attr("data-catid"); 
+$.ajax( 
+{ 
+    type:"POST", 
+    url: "like", 
+    data:{ 
+             post_id: id 
+}, 
+success: function( data ) 
+{ 
+    $( '#like'+ id ).removeClass('btn btn-primary btn-lg'); 
+    $( '#like'+ id ).addClass('btn btn-success btn-lg'); } }) });
+</script>
+    
+
+</body>
+</html>
+

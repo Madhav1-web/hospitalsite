@@ -26,7 +26,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'website'
+    'website',
+    'django_filters'
 ]
 
 MIDDLEWARE = [
@@ -119,3 +120,6 @@ EMAIL_HOST_USER = 'madhavm2002@gmail.com'
 EMAIL_HOST_PASSWORD = 'rarai1234'
 EMAIL_USE_TLS = True
 EMAIL_USE_SSL = False
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / 'media'

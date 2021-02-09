@@ -12,10 +12,10 @@
                          <!-- NEWS THUMB -->
                          <div class="news-detail-thumb">
                               <div class="news-image">
-                                   <img src="{%  static 'images/news-image3.jpg' %}" class="img-responsive" alt="">
+                                   <img src="{{ newss.aimg.url }}" class="img-responsive" alt="">
                               </div>
-                              <h3>Review Annual Medical Research</h3>
-                              <p>Aenean molestie porttitor lorem sed semper. Aliquam semper iaculis libero, eu finibus ex euismod at. In molestie justo ut egestas porttitor. Phasellus interdum erat eu lectus condimentum euismod. Sed pellentesque fringilla diam vitae congue. Ut rutrum diam nisi, in maximus felis vulputate vitae.</p>
+                              <h3>{{ newss.ntitle }}</h3>
+                              <p>{{ newss.ndesc }}</p>
                               <blockquote>Vestibulum gravida rutrum est non volutpat. Morbi imperdiet odio ut tempor vestibulum. Mauris tincidunt vehicula nibh, sodales vehicula erat imperdiet ut.</blockquote>
                               <p>Maecenas eu lorem gravida nisi aliquam porta. Etiam eu tellus enim. Vivamus ligula ex, iaculis a sodales et, placerat eget neque. In porttitor tortor in purus commodo lobortis. Nullam ornare quam ac turpis luctus, commodo facilisis nisi venenatis. Cras a posuere risus.</p>
                               
@@ -39,7 +39,7 @@
                          <div class="news-sidebar">
                               <div class="news-author">
                                    <h4>About the author</h4>
-                                   <p>Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet, wisi risus purus augue vulputate voluptate neque.</p>
+                                   <p>{{newss.aname}} is the {{newss.apos}} of Healthcare</p>
                               </div>
 
                               <div class="recent-post">

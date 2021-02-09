@@ -1,0 +1,38 @@
+{% extends 'website/base.html' %}
+{% load static %}
+{% block content%}
+<div class="container">
+<h2>You have logged in as {{ me }} </h2>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Name</th>
+      <th scope="col">Email</th>
+      <th scope="col">Date</th>
+      <th scope="col">Drop</th>
+      <th scope="col">Time</th>	
+      <th scope="col">phone</th>
+      <th scope="col">msg1</th>
+      <th scope='col'>status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+    {% for entry in disp %}	
+    <tr>
+      <th scope="row">{{ entry.msg_id }}</th>
+      <td>{{ entry.name }}</td>
+      <td>{{ entry.email }}</td>
+      <td>{{ entry.date }}</td>
+      <td>{{ entry.drop }}</td>
+      <td>{{ entry.time }}</td>
+      <td>{{ entry.phone }}</td>
+      <td>{{ entry.msg1 }}</td>
+      <td>{{ entry.status }}
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+</div>
+{% endblock %}
