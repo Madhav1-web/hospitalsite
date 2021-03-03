@@ -9,7 +9,8 @@ urlpatterns = [
 	#this is the test url
 	path('test2/', views.test2, name="test2"),
 	path('login/', views.login, name="login"),
-	path('authentication/', views.authentication, name="authentication")
+	path('authentication/', views.authentication, name="authentication"),
+	path(r'load_time/', views.load_time)
 
 ]
 

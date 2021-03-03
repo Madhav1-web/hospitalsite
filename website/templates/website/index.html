@@ -261,11 +261,6 @@ http://www.tooplate.com/view/2098-health
                                    </div>
 
                                    <div class="col-md-6 col-sm-6">
-                                        <label for="date">Select Date</label>
-                                        <input type="date" name="date" value="" class="form-control">
-                                   </div>
-
-                                   <div class="col-md-6 col-sm-6">
                                         <label for="select">Select Department</label>
                                         <select class="form-control" name="drop">
                                         {% for entry in items %}
@@ -275,11 +270,16 @@ http://www.tooplate.com/view/2098-health
                                    </div>
 
                                    <div class="col-md-6 col-sm-6">
-                                        <label for="select">Select Time</label>
-                                        <select class="form-control" name="drop1">
-                                        {% for entry in times %}
-                                             <option>{{ entry.time }}</option>
+                                        <label for="select">Select Date</label>
+                                        <select class="form-control" name="drop1" id="date-ajax">
+                                        {% for entry in det %}
+                                             <option>{{ entry.dateaj }}</option>
                                         {% endfor %}
+                                        </select>
+                                   </div>
+                                   <div class="col-md-6 col-sm-6">
+                                        <label for="select">Select Time</label>
+                                        <select class="form-control" name="drop2" id="time-ajax">
                                         </select>
                                    </div>
 
@@ -292,6 +292,7 @@ http://www.tooplate.com/view/2098-health
                                    </div>
                               </div>
                         </form>
+
                     </div>
 
                </div>
@@ -299,6 +300,7 @@ http://www.tooplate.com/view/2098-health
      </section>
      
      <br>
+
      <!-- GOOGLE MAP -->
      <section id="google-map">
      <!-- How to change your own map point
@@ -404,10 +406,37 @@ http://www.tooplate.com/view/2098-health
      <script src="{%  static 'js/wow.min.js' %}"></script>
      <script src="{%  static 'js/smoothscroll.js' %}"></script>
      <script src="{%  static 'js/owl.carousel.min.js' %}"></script>
-     <script src="{%  static 'js/custom.js' %}"></script>        
+     <script src="{%  static 'js/custom.js' %}"></script>
+      
 
 
-     
+<script>
+     $(document).ready(function(){
+                 $('#date-ajax').change(function () {
+                     var given_time   = $(this).val();
+                     console.log( $(this).val() );
+                     console.log( given_time );
+
+                     $.ajax({
+                            url: '/load_time/',  
+                            data: {
+                              'tim' : given_time
+                            },
+                            dataType: "JSON",
+                            success: function(data)
+                            {
+                            console.log(data);
+                            $("#time-ajax option").remove();
+                            for (var i = data.length - 1; i >= 0; i--) 
+                            {
+                              $("#time-ajax").append('<option>'+ data[i].fields.timeaj +'</option>');
+                            };
+
+                            },
+                         });
+                 });
+            });
+</script>
 
 </body>
 </html>
