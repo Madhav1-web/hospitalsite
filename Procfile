@@ -1,0 +1,1 @@
+web: gunicorn DentistWebsite.wsgi --log-file - 
