@@ -47,7 +47,6 @@ pypiwin32==223
 python-decouple==3.4
 pyttsx3==2.90
 pytz==2020.4
-pywin32==300
 requests==2.25.1
 scrapy-user-agents==0.1.1
 selenium==3.141.0
