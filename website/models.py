@@ -17,7 +17,7 @@ class timeajax(models.Model):
 
 class Form(models.Model):
 	msg_id = models.AutoField(primary_key=True)
-	name = models.CharField(max_length=80)
+	name = models.CharField(max_length=80, blank=False)
 	email = models.CharField(max_length=80)
 	date = models.CharField(max_length=80)
 	drop = models.CharField(max_length=80)
